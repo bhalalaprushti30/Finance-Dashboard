@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Finance Dashboard</h2>
+        <ul>
+            <li><a href="#expensesChart">Expenses</a></li>
+            <li><a href="#savingsChart">Savings</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Financial Overview</h1>
+        <div class="card summary">
+            <h3>Total Expenses: <span>$2300</span></h3>
+            <h3>Total Savings: <span>$5000</span></h3>
+        </div>
+        <div class="chart-container">
+            <canvas id="expensesChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="savingsChart"></canvas>
+        </div>
+        <button class="download-btn">Download Report</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
